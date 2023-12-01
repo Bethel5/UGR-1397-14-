@@ -4,36 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header><h2>Projects</h2></header>
-    <a href="home.html">Home</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="experience&skills.html">Experience & skills</a>
-    <a href="contactme.html">Contact me</a>
-    <hr>
-    <div>
-    <figure>
-    <img src="images/project1flowershopwebsite.jpg" alt="flower shop website">
-        <figcaption>Jenstore Flower shop</figcaption></figure>
-    <br>
-    <figure>
-        <img src="images/project2coffeeshopwebsite.jpg" alt="coffee shop website">
-        <figcaption>Flavored Coffee</figcaption></figure>
-    <br>
-    <figure>
-        <img src="images/project3eventplannig.jpg" alt="event planning website">
-        <figcaption>Elevate Decor</figcaption></figure>
-    <br>
+    <div class="container">
+        <header><h2>Projects</h2></header>
+            <div class="navigation">
+                <input type="checkbox" class="toggle-menu ">
+                <div class="hamburger"></div>
+                <ul class="menu">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./aboutme.html">About me</a></li>
+                    <li><a href="./experience&skills.html">Experience & Skills</a></li>
+                    <li><a href="./Contactme.html">Contact me</a></li>
+                </ul>
+            </div>
+        
+        <hr class="horizontal-line">
+    <div class="image_container">
+        <div class="row1">
+           
+            <figure class="project1">
+            <img  class="project1" src="images/project1flowershopwebsite.jpg" alt="flower shop website">
+                <figcaption>Jenstore Flower shop</figcaption>
+            </figure>
+            
+
+            <figure class="project2">
+                <img class="project2" src="images/project2coffeeshopwebsite.jpg" alt="coffee shop website">
+                <figcaption>Flavored Coffee</figcaption>
+            </figure>
+        </div>
+        <div class="row2">
+            <figure class="project3">
+                <img class="project3" src="images/project3eventplannig.jpg" alt="event planning website">
+                <figcaption>Elevate Decor</figcaption>
+            </figure>
+            
+            
+            
+            <figure class="video">
+                <iframe class="video" src="https://www.youtube.com/embed/Mi0ZWuecT0Q?si=rYMR4hcV-ciAatKu" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <figcaption>Avis car rental</figcaption>
+            </figure>
+        </div>
     </div>
-    <div>
-    <figure>
-        <iframe src="https://www.youtube.com/embed/Mi0ZWuecT0Q?si=rYMR4hcV-ciAatKu" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <figcaption>Avis car rental</figcaption></figure>
-                   
-    </div>
-    <footer>
-        <a href="contactme.html">Contact Me</a>
-    </footer>
+    <hr class="horizontal-line">            
+        <footer>
+            <a href="contactme.html">Contact Me</a>
+        </footer>
+</div>
+        
+    
 </body>
 </html>

@@ -4,43 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header><h2>Contact Me</h2></header>
-    <a href="home.html">Home</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="experience&skills.html">Experience & skills</a>
-    <a href="projects.html">Projects</a>
-    <hr>
-    <br>
-        <h3>Get in touch with me!</h3>
-    <br>
-    
-    <table>
+    <div class="container">
+        <header><h2>Contact Me</h2></header>
+            <div class="navigation">
+                <input type="checkbox" class="toggle-menu ">
+                <div class="hamburger"></div>
+                <ul class="menu">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./aboutme.html">About me</a></li>
+                    <li><a href="./experience&skills.html">Experience & Skills</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                </ul>
+            </div>
         
-        <tr>
-            <td>
-                <img src="images/phoneicon.png" alt="phone icon">+251900000000
-            </td>
-            <td>
-                <img src="images/gmailicon.png" alt="gmail icon">betheldereje5@gmail.com
-            </td>
-            
+        <hr class="horizontal-line">
+        <br>
+            <h3>Get in touch with me!</h3>
+        <br>
+        <hr class="horizontal-line">
+        <div class="table">
+        
+            <table>
+                
+                <tr>
+                    <td>
+                        <img class="phoneicon" src="images/phoneicon.png" alt="phone icon">+251900000000
+                    </td>
+                    <td>
+                        <img class="gmailicon" src="images/gmailicon.png" alt="gmail icon">betheldereje5@gmail.com
+                    </td>
+                    
 
-        <tr>
-            <td>
-                <img src="images/telegramicon.png" alt="telegram icon">@b_e_th_e_l
-            </td>
-            <td>
-                <img src="images/instagramicon.png" alt="instagram icon">@b_e_th_e_l
-            </td>
-            </tr>                
-            
-   
-    </table>
-    <br>
-    <footer>
-        <a href="contactme.html">Contact Me</a>
-    </footer>
+                <tr>
+                    <td>
+                        <img class="telegramicon" src="images/telegramicon.png" alt="telegram icon">@b_e_th_e_l
+                    </td>
+                    <td>
+                        <img class="instagramicon" src="images/instagramicon.png" alt="instagram icon">@b_e_th_e_l
+                    </td>
+                    </tr>                
+                    
+        
+            </table>
+        </div>
+        <br>
+        <hr class="horizontal-line">
+        <footer>
+            <a href="contactme.html">Contact Me</a>
+        </footer>
+    </div>
 </body>
 </html>

@@ -4,33 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header><h2>Experience & Skills</h2></header>
-    <a href="home.html">Home</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="projects.html">Projects</a>
-    <a href="contactme.html">Contact me</a>
-    <hr>
-    <div>
-        <h3>Experience</h3>
-        <ul>
-            <li>Collaborating with clients to determine website requirements and goals..</li>
-            <li>Designing website layouts and user interfaces using tools like Adobe Photoshop, figma or Sketch. </li>
-            <li>Writing HTML, CSS, and JavaScript code to implement website designs.</li>
-            <li>Troubleshooting technical issues and bugs in website functionality.</li>
-        </ul>
-        <img src="images/hardworkingphoto.jpg"alt="workspace photo">
-    </div>
-    <br>
-    <div>
-        <h3>Skills</h3>
-        <img src="images/venndiagram2x.png"alt="venn diagram">
+    <div class="container">
+        <header><h2>Experience & Skills</h2></header>
+            <div class="navigation">
+                <input type="checkbox" class="toggle-menu ">
+                <div class="hamburger"></div>
+                <ul class="menu">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./aboutme.html">About me</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./Contactme.html">Contact me</a></li>
+                </ul>
+            </div>
         
-        
+        <hr class="horizontal-line">
+        <div class="row">
+            <h2>Experience</h2>
+            <div class="experience">
+                
+                <ul class="list">
+                
+                    <li>Collaborating with clients to determine website requirements and goals..</li>
+                    <li>Designing website layouts and user interfaces using tools like Adobe Photoshop, figma or Sketch. </li>
+                    <li>Writing HTML, CSS, and JavaScript code to implement website designs.</li>
+                    <li>Troubleshooting technical issues and bugs in website functionality.</li>
+                </ul>
+                <img class="hardworkingphoto" id="work" src="images/hardworkingphoto.jpg" alt="workspace photo">
+            </div>
+        <br>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <img class="venn" src="images/venndiagram2x.png" alt="venn diagram">
+            
+            
+        </div>
+        <hr class="horizontal-line">
+        <footer>
+            <a href="contactme.html">Contact Me</a>
+        </footer>
     </div>
-    <footer>
-        <a href="contactme.html">Contact Me</a>
-    </footer>
 </body>
 </html>

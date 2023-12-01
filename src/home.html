@@ -4,26 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-   <header><h2>Home</h2></header>
-   <a href="aboutme.html">About Me</a>
-   <a href="experience&skills.html">Experience & Skills</a>
-   <a href="projects.html">Projects</a>
-   <a href="contactme.html">Contact me</a>
-   <hr>
-   <img src="images/photo1.jpg" alt= "animated photo">
-   <br>
-   <audio controls>
-        <source src="images/hello-female-friendly-professional-87141.mp3" type="audio/mp3">
-   </audio>
-   <p>Hello, I'm Bethel.</p>
-   <p>I'm a web designer and developer.</p>
-   <q>Little achievements lead to big results.</q>
-   
-   <footer>
-    <a href="contactme.html">Contact Me</a>
-   </footer>
-   
+    <div class="container">
+        <header><h2>Home</h2></header>
+            <div class="navigation">
+                <input type="checkbox" class="toggle-menu ">
+                <div class="hamburger"></div>
+                <ul class="menu">
+                    <li><a href="./Aboutme.html">About me</a></li>
+                    <li><a href="./experience&skills.html">Experience & Skills</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./Contactme.html">Contact me</a></li>
+                </ul>
+            </div>
+        
+        
+        
+        <hr class="horizontal-line">
+        <img class="photo1" src="images/photo1.jpg" alt= "animated photo">
+        <br>
+        <audio controls>
+                <source src="images/hello-female-friendly-professional-87141.mp3" type="audio/mp3">
+        </audio>
+    
+        <div class="intro">
+        <p>Hello, I'm Bethel.</p>
+        <p>I'm a web designer and developer.</p>
+        <q>Little achievements lead to big results.</q> 
+        </div>
+    <br>
+    <hr class="horizontal-line">
+        <footer>
+        <a href="contactme.html">Contact Me</a>
+        </footer>
+    </div>
+    <script>
+        function toggleMenu() {
+            var navigation = document.querySelector('.navigation ul');
+            navigation.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
